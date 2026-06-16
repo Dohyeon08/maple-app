@@ -53,7 +53,7 @@ function buildName({ length, type, keyword, position, noBatchim }) {
 async function apiCheck(name) {
   try {
     const res = await fetch(
-      `https://maple-app-iota.vercel.app/api/check?name=${encodeURIComponent(name)}`
+      `https://maple-server-r6gb.onrender.com/api/check?name=${encodeURIComponent(name)}`
     );
 
     if (res.status === 200) return "taken";
