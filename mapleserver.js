@@ -28,6 +28,10 @@ app.get("/api/check", async (req, res) => {
 
     const data = await response.json();
 
+    console.log("닉네임:", name);
+    console.log("상태코드:", response.status);
+    console.log("응답:", data);
+
     if (response.status === 200) {
       return res.status(200).json(data);
     }
